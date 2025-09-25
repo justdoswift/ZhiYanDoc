@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  base: "/ZhiYanDoc/",
   title: "织言",
   description: "隐私政策与服务协议",
   themeConfig: {
