@@ -4,26 +4,16 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   base: "/ZhiYanDoc/",
   title: "织言",
-  description: "隐私政策与服务协议",
+  description: "A VitePress Site",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: '服务条款', link: '/TermOfUse' },
+      { text: '隐私政策', link: '/Privacy' }
     ],
 
-    sidebar: [
-      {
-        text: 'Examples',
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
-      }
-    ],
-
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ]
+    footer: {
+      copyright: '<a href="https://beian.miit.gov.cn/" target="_blank">京ICP备2023028894号-4A</a> Copyright © 2023 Ge Peng'
+    }
   }
 })
